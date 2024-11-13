@@ -46,7 +46,9 @@ Remember : You are billed for an Static IP when you are NOT using it as well!   
 ![](image/Pasted%20image%2020241111072814.png)
 
 
-电视 Reserve Static address 去 创造一个新的 static address 
+点击 Reserve Static address 这个 button 去 创造一个新的 static address 
+
+可以看到 instance 的 为 static 了 
 ![](image/Pasted%20image%2020241111072916.png)
 
 
