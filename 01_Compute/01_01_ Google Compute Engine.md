@@ -100,6 +100,32 @@ _Sole_-_tenant nodes_ can help you meet dedicated hardware requirements for brin
 
 
 
+# 7 Meta Data 
 
+## 7.1 ssh key 
+
+
+![](image/Pasted%20image%2020241124124836.png)
+
+![](image/Pasted%20image%2020241124124855.png)
+
+
+![](image/Pasted%20image%2020241124124902.png)
+
+
+![](image/Pasted%20image%2020241124124924.png)
+
+
+
+--- 
+Listing SSH Keys
+
+1 List SSH Keys in Project Metadata
+`gcloud compute project-info describe --format="json"`  Look for the commonInstanceMetadata field and check for the ssh-keys entry. This field contains the SSH keys applied at the project level.
+`gcloud compute project-info describe --format="value(commonInstanceMetadata.ssh-keys)"`
+
+2 List SSH Keys in Instance Metadata
+`gcloud compute instances describe INSTANCE_NAME --zone=ZONE --format="json"`
+`gcloud compute instances describe INSTANCE_NAME --zone=ZONE --format="value(metadata.ssh-keys)"`
 
 
